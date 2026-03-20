@@ -1,0 +1,13 @@
+/* 
+This file was used to demonstrate the cascading nature of CSS.
+
+If placed in the html after style.css, this will cause the color to
+be overwritten by the contents of this page.
+
+If placed in the html BEFORE style.css, this page's color change
+will be overwritten by the actions defined on that stylesheet.
+*/
+
+.cascade {
+    color: black;
+}

@@ -1,0 +1,37 @@
+/* * {
+    color: red
+} */
+
+
+/* ⬇️ SPECIFICITY 1 ⬇️*/
+/* CLASS SELECTORS HAVE HIGHER SPECIFICITY THAN ELEMENT */
+.test {color: green;}
+p {color: red;}
+/* ⬆️ SPECIFICITY 1 ⬆️*/
+
+/* ⬇️ SPECIFICITY 2 ⬇️*/
+/* ID SELECTORS HAVE HIGHER SPECIFICITY THAN CLASS */
+#demo {color: blue;}
+.test2 {color: green;}
+p {color: red;}
+/* ⬆️ SPECIFICITY 2 ⬆️*/
+
+
+/* ⬇️ CASCADING NATURE OF CSS ⬇️*/
+/* Executed from top to bottom. */
+.cascade {
+    color: blue !important;
+    font-weight: bolder;
+}
+
+span.cascade {
+    color: yellow;
+}
+
+.cascade {
+    color: red;
+}
+
+/* REMINDER! There is a style2.css file that may make this behave differently than expected. */
+
+/* ⬆️ CASCADING NATURE OF CSS ⬆️*/
