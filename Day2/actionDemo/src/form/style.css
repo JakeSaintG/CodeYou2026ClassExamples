@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form,
+body,
+.input_example {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 75%;
+    gap: 1rem;
+    margin: 0 auto; /* Easy way to center content that are child elements of an element with a display of "flex". */
+    padding: 1rem;
+}
+
+.input_example {
+    background-color: blanchedalmond;
+    border: solid rgb(232, 171, 80) 3px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.input_example p {
+    margin-bottom: 0;
+}
+
+h3,
+h2 {
+    margin-bottom: 0;
+}
+
+#advanced_options {
+    /* display: block; */
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 0 1rem;
+}

@@ -1,19 +1,12 @@
-const pingServer = () =>
-    fetch(`http://localhost:3000/ping`)
-        .then((r) => r.status)
-        .then((status) => {
-            if (status === 200) {
-                console.log('Server healthy');
-                document.getElementById('server_status').innerText = `Healthy`;
-            } else {
-                console.log(`server not healthy: ${status}`);
-                document.getElementById('server_status').innerText = `Not Healthy`;
-            }
-        })
-        .catch((error) => {
-            // showServerHealth('error', error);
-            console.log(`not healthy: ${error}`);
-            document.getElementById('server_status').innerText = `Error: ${error}`;
-        });
+const advOptions = document.getElementById('advanced_options');
+const btnInput = document.getElementById('button_input');
 
-pingServer()
+const showHideAdvancedOptions = () => {
+    if (advOptions.style.display != 'none') {
+        advOptions.style.display = 'none';
+        btnInput.value = 'Show Advanced Options';
+    } else {
+        advOptions.style.display = 'block';
+        btnInput.value = 'Hide Advanced Options';
+    }
+}
