@@ -1,0 +1,17 @@
+#params_container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Specificity exmaple: Target just the first span element in the #params_container div */
+#params_container span:first-of-type {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* Specificity exmaple: Just using a class to target the second span in the #params_container div */
+.none_supplied {
+    font-style: italic;
+    color: red;
+}
+

@@ -15,137 +15,160 @@
         </div>
 
         <form action="http://localhost:3000/success" method="GET">
-            <h2>GET demo 1: WIP</h2>
+            <h2>GET demo 1:</h2>
             <div class="input_example">
-                <label for="checkbox_input">Checkbox input field:</label>
-                <input type="checkbox" id="checkbox_input" name="checkbox_field"/>
-                <p>Details: foo bar</p>
+                <label for="checkbox_input_get">Checkbox input field:</label>
+                <input type="checkbox" id="checkbox_input_get" name="checkbox_field" value="checkbox_checked"/>
+                <p>Details: Allows users to select single values for submission in a form or choose not to. The "value" attribute is what will show up in query params</p>
+                <a href="developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/checkbox">MDN</a>
             </div>
             <div class="input_example">
-                <label for="color_input">Color input field:</label>
-                <input type="color" id="color_input" name="color_field" />
-                <p>Details: foo bar</p>
+                <label for="color_input_get">Color input field:</label>
+                <input type="color" id="color_input_get" name="color_field" />
+                <p>Details: This field takes advantage of built-in browser and/or OS color selection to allow a user specify a color.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/color">MDN</a>
             </div>
             <div class="input_example">
                 <label for="date_input">Date input field:</label>
                 <input type="date" id="date_input" name="date_field" />
                 <p>Details: foo bar</p>
+                <a href="http://">MDN</a>
             </div>
             <div class="input_example">
                 <label for="datetime_local_input">Datetime_local input field:</label>
                 <input type="datetime-local" id="datetime_local_input" name="datetime_local_field" />
                 <p>Details: foo bar</p>
+                <a href="http://">MDN</a>
             </div>
             <div class="input_example">
-                <label for="email_input">Email input field:</label>
-                <input type="email" id="email_input" name="email_field" />
+                <label for="email_input_get">Email input field:</label>
+                <input type="email" id="email_input_get" name="email_field" />
                 <p>Details: foo bar</p>
+                <a href="http://">MDN</a>
             </div>
             <div class="input_example">
-                <label for="file_input">File input field:</label>
-                <input type="file" id="file_input" name="file_field" />
+                <label for="file_input_get">File input field:</label>
+                <input type="file" id="file_input_get" name="file_field" />
                 <p>Details: foo bar</p>
+                <a href="http://">MDN</a>
             </div>
             <div class="input_example">
-                <label for="hidden_input">Hidden input field:</label>
-                <input type="hidden" id="hidden_input" name="hidden_field" />
-                <p>Details: foo bar</p>
+                <label for="hidden_input_get">Hidden input field:</label>
+                <input type="hidden" id="hidden_input_get" name="hidden_field" value="hidden_data"/>
+                <p>Details: Don't see anything? That's intentional! The hidden field lets web developers include data that cannot be seen or modified by users but is present on form submission. Though, like all things web, anything can be viewed if you know how so DO NOT rely on this for security.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/hidden">MDN</a>
             </div>
             <div class="input_example">
-                <label for="image_input">Image input field:</label>
-                <input type="image" id="image_input" name="image_field" />
-                <p>Details: foo bar</p>
+                <label for="month_input_get">Month input field:</label>
+                <input type="month" id="month_input_get" name="month_field" />
+                <p>Details: Allows the user enter a month and year allowing a month and year to be easily entered. <br/><br/>NOTE: Not well supported in FireFox. Use a Chromium based browser to interact with this (Edge, Chrome, Brave, etc).</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/month">MDN</a>
             </div>
             <div class="input_example">
-                <label for="month_input">Month input field:</label>
-                <input type="month" id="month_input" name="month_field" />
-                <p>Details: foo bar</p>
+                <label for="number_input_get">Number input field:</label>
+                <input type="number" id="number_input_get" name="number_field" />
+                <p>Details: Allows a user to select a number and rejects non-numerical inputs. Use "min" and "max" attributes to restrict the input.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/number">MDN</a>
             </div>
             <div class="input_example">
-                <label for="number_input">Number input field:</label>
-                <input type="number" id="number_input" name="number_field" />
-                <p>Details: foo bar</p>
-            </div>
-            <div class="input_example">
-                <label for="password_input">Password input field:</label>
-                <input type="password" id="password_input" name="password_field"/>
+                <label for="password_input_get">Password input field:</label>
+                <input type="password" id="password_input_get" name="password_field"/>
                 <p>Details: An input field for text that should be obfuscated/hidden. <br/> Will also trigger most browers to alert the user that Caps Lock is on.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/password">MDN</a>
             </div>
             <div class="input_example">
                 <!-- Radio buttons with the same name attribute allows for a single selection of multiple options. -->
-                <label for="radio_input">Radio input field:</label>
-                <input put type="radio" id="radio_input" name="radio_field" />
-                <label for="radio_input2">Radio input field 2:</label>
-                <input type="radio" id="radio_input2" name="radio_field" />
+                <label for="radio_input_get">Radio input field:</label>
+                <input put type="radio" id="radio_input_get" name="radio_field" value="Selected radio value 1"/>
+                <label for="radio_input2_get">Radio input field 2:</label>
+                <input type="radio" id="radio_input2_get" name="radio_field" value="Selected radio value 2"/>
                 <p>Details: Radio buttons with the same name attribute allows for a single selection of multiple options. This is great for a multiple choise test (A, B, C, D), True/False, or Yes/No forms.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio">MDN</a>
             </div>
             <div class="input_example">
-                <label for="range_input">Range input field:</label>
-                <input type="range" id="range_input" name="range_field" />
-                <p>Details: foo bar</p>
+                <label for="range_input_get">Range input field: <span id="range_input_get_value"></span></label>
+                <input type="range" id="range_input_get" name="range_field" min="0" max="20" step="2" value="10" onchange="displaySlider(this.id)"/>
+                <p>Details: Allows the user to input a number that can be constained by "max" or "min" values. "Step" allows a developer to restict the user into certain increments (5,10,etc) and "value" defines where the slider will start. <br/><br/>The above slider must be between 0-20 with steps of 2.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/range">MDN</a>
             </div>
             <div class="input_example">
-                <label for="search_input">Search input field:</label>
-                <input type="search" id="search_input" name="search_field" />
-                <p>Details: foo bar</p>
+                <label for="search_input_get">Search input field:</label>
+                <input type="search" id="search_input_get" name="search_field" />
+                <p>Details: The search input is functionally the same as a "text" input but is designed for a user to search a site with accessibility in mind.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/search">MDN</a>
             </div>
             <div class="input_example">
-                <label for="tel_input">Telecom input field:</label>
-                <input type="tel" id="tel_input" name="tel_field" />
-                <p>Details: foo bar</p>
+                <label for="tel_input_get">Telecom input field:</label>
+                <input type="tel" id="tel_input_get" name="tel_field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                <p>Details: Allows a user to input a phone number. The "pattern" attribute restricts what the user can put into the field and checks it at submission time. <br/><br/>The format of this field should look like: 123-456-7890</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/tel">MDN</a>
             </div>
             <div class="input_example">
-                <label for="time_input">Time input field:</label>
-                <input type="time" id="time_input" name="time_field" />
-                <p>Details: foo bar</p>
+                <label for="text_input_get">Text input field:</label>
+                <input type="text" id="text_input_get" name="text_field" />
+                <p>Details: The most basic of input fields that allow text. Consider this a "catch all" if the other input types do not meed your needs. Use the "minlength" and "maxlength" to restrict user input and "length" to change how big the text field is (though CSS can do that as well).</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/text">MDN</a>
             </div>
             <div class="input_example">
-                <label for="url_input">Url input field:</label>
-                <input type="url" id="url_input" name="url_field" placeholder="https://example.com" pattern="https://.*"/>
-                <p>Details: Allows a dev to define a URL of a desired "shape". The "pattern" attribute will block the form from submitting if the input does not match. <br/><br/> The pattern for this field is "https://.*" where "." means that ANYTHING can go there and "*" means that a character can go there any number of times.</p>
+                <label for="time_input_get">Time input field (restricted 9a to 5p):</label>
+                <input type="time" id="time_input_get" name="time_field" min="09:00" max="17:00"/>
+                <label for="time_input_hour_get">Time input field (restricted to hourly increments):</label>
+                <input type="time" id="time_input_hour_get" name="time_field_hour" step="3600"/>
+                <p>Details: Allows the user to input a time more easily. The time input also has "min" and "max" attributes that allow developers to place limits on the time selected (office hours, appointments, etc). Additionally, the "step" attribute allows a developer to restrict the granularity of the time selected (minutes, hours, etc). <br/><br/>NOTE! "Min", "Max", and "Step" are enforced on submission. "Step" may also have questionable browser support.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/time">MDN</a>
             </div>
             <div class="input_example">
-                <label for="week_input">Week input field:</label>
-                <input type="week" id="week_input" name="week_field" min="2014-W04" max="2014-W30"/>
+                <label for="url_input_get">Url input field:</label>
+                <input type="url" id="url_input_get" name="url_field" placeholder="https://example.com" pattern="https://.*"/>
+                <p>Details: Allows a dev to define a URL of a desired "shape". The "pattern" attribute will block the form from submission if the input does not match. <br/><br/> The pattern for this field is "https://.*" where "." means that ANYTHING can go there and "*" means that a character can go there any number of times.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/url">MDN</a>
+            </div>
+            <div class="input_example">
+                <label for="week_input_get">Week input field:</label>
+                <input type="week" id="week_input_get" name="week_field" min="2014-W04" max="2014-W30"/>
                 <p>Details: Allows a user to input a specific week in an defined span of time.<br/><br/>Valid week inputs are between 04 and 30. Change the year in the "max" attribute to 2016 and see how the input changes. 🙂<br/><br/>NOTE: Not well supported in FireFox. Use a Chromium based browser to interact with this (Edge, Chrome, Brave, etc).</p>
-            </div>
-            <div class="input_example">
-                <label for="text_input">Text input field:</label>
-                <input type="text" id="text_input" name="text_field" />
-                <p>Details: The most basic of input fields that allow text. Consider this a "catch all" if the other input types do not meed your needs.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/week">MDN</a>
             </div>
 
             <h3>Form control inputs:</h3>
             <div class="input_example">
-                <label for="button_input">Button input field:</label>
-                <input type="button" id="button_input" name="button_field" value="Show Advanced Options" onclick="showHideAdvancedOptions()"/>
+                <label for="button_input_get">Button input field:</label>
+                <input type="button" id="button_input_get" name="button_field" value="Show Advanced Options" onclick="showHideAdvancedOptions()"/>
                 <p>Details: Separate from submit button, this can used for various form actions like validating a field or expose "advanced options".</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/button">MDN</a>
             </div>
             <div id="advanced_options" style="display:none;">
                 <h4>Advanced Options</h4>
                 <p>There are none...but imagine that there are some really cool advanced options here.</p>
             </div>
             <div class="input_example">
-                <label for="reset_input">Reset input field:</label>
-                <input type="reset" id="reset_input" name="reset_field" />
+                <label for="reset_input_get">Reset input field:</label>
+                <input type="reset" id="reset_input_get" name="reset_field" />
                 <p>Details: An input of type "reset" will reset all inputs enclosed in the form element.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/reset">MDN</a>
             </div>
             <div class="input_example">
-                <label for="submit_input">Submit input field:</label>
-                <input type="submit" value="submit_input" name="submit_field"/>
+                <label for="image_input">Image input field:</label>
+                <input type="image" id="image_input_get" name="image_field" src="./img/submit_img.jpg" alt="image_input_submit" width="100px"/>
+                <p>Details: This input is functionally identical to a "submit" inputer type. It does, however, allow a dev to use an image in place of an html button...like the poorly drawn one above.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/image">MDN</a>
+            </div>
+            <div class="input_example">
+                <label for="submit_input_get">Submit input field:</label>
+                <input type="submit" id="submit_input_get" value="submit_input" name="submit_field"/>
                 <p>Details: Submit the form!</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/submit">MDN</a>
             </div>
         </form>
 
-        <h2>POST demo 1: With Redirect</h2>
         <form action="http://localhost:3000/form_submit_redirect" method="POST">
-
+            <h2>POST demo 1: With Redirect</h2>
         </form>
 
-        <h2>POST demo 2: Without Redirect</h2>
         <form action="http://localhost:3000/form_submit" method="POST">
-
+            <h2>POST demo 2: Without Redirect</h2>
         </form>
+
         <script src="ping.js"></script>
         <script src="app.js"></script>
     </body>

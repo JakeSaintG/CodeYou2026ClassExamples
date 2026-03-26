@@ -10,3 +10,10 @@ const showHideAdvancedOptions = () => {
         btnInput.value = 'Hide Advanced Options';
     }
 }
+
+
+const displaySlider = (id) => {
+    const slider = document.getElementById(id);
+    const rangeValue = document.getElementById(`${id}_value`);
+    rangeValue.innerText = slider.value;
+}
