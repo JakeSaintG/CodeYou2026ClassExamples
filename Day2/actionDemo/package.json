@@ -12,10 +12,11 @@
   "author": "JakeSaintG",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^2.2.2",
     "cors": "^2.8.6",
     "express": "^5.2.1"
   },
   "devDependencies": {
-      "nodemon": "^3.1.14"
-    }
+    "nodemon": "^3.1.14"
+  }
 }

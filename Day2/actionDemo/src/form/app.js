@@ -1,6 +1,12 @@
 const advOptions = document.getElementById('advanced_options');
 const btnInput = document.getElementById('button_input');
 
+const collapse = (elementId) => {
+    const toCollapse = document.getElementById(elementId);
+
+    toCollapse.style.display= 'none';
+}
+
 const showHideAdvancedOptions = () => {
     if (advOptions.style.display != 'none') {
         advOptions.style.display = 'none';
@@ -10,7 +16,6 @@ const showHideAdvancedOptions = () => {
         btnInput.value = 'Hide Advanced Options';
     }
 }
-
 
 const displaySlider = (id) => {
     const slider = document.getElementById(id);

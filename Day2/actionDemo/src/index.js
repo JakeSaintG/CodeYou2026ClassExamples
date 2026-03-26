@@ -1,11 +1,13 @@
 // Traditionally, this would be done in typescipt
 import express from "express";
 import cors from "cors";
+import bodyParser from "body-parser";
 
 const port = 3000;
 
 const app = express();
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true })); // Needed to parse the inputs
 app.use(cors());
 
 // Send all files in the form folder via localhost:3000/main
@@ -15,13 +17,21 @@ app.use("/form", express.static("./src/form"));
 app.use("/success", express.static("./src/success"));
 
 app.post("/form_submit", (req, res) => {
-    console.log(req.body)
-    console.log(res.body)
+    console.log('form_submit end point triggered')
+    
+    
+    console.log("Form data received:")
 
-    res.status(200);
+    Object.keys(req.body).forEach( key =>{
+        console.log(key, req.body[key]);
+    })
+
+    return res.redirect('/form')
 })
 
 app.post("/form_submit_redirect", (req, res) => {
+    console.log('form_submit_redirect end point triggered')
+    
     console.log(req.body)
     console.log(res.body)
 
