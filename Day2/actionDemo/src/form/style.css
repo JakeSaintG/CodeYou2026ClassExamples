@@ -3,6 +3,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#server_status.healthy {
+    background-color: rgb(99, 255, 99);
+}
+
+#server_status.unhealthy {
+    background-color: rgb(246, 115, 115);
+
+}
+
 form,
 body,
 .input_example {

@@ -42,14 +42,14 @@ is going on. We'll get there soon.
                 document.getElementById("server_status").innerText = pingSuccessKeyWord;
             } else {
                 console.log(`server not ${pingSuccessKeyWord}: ${status}`);
-                document.getElementById("server_status").innerText =
-                `Not ${pingSuccessKeyWord}`;
+                document.getElementById("server_status").innerText = `Not ${pingSuccessKeyWord}`;
+                document.getElementById("server_status").className = `unhealthy`;
             }
         })
         .catch((error) => {
             console.log(`not ${pingSuccessKeyWord}: ${error}`);
-            document.getElementById("server_status").innerText =
-            `Error: ${error}`;
+            document.getElementById("server_status").innerText = `Error: ${error}`;
+            document.getElementById("server_status").className = `unhealthy`;
         })
     }
 )();
@@ -66,14 +66,14 @@ is going on. We'll get there soon.
                 document.getElementById("server_status").innerText = pingSuccessKeyWord;
             } else {
                 console.log(`server not ${pingSuccessKeyWord}: ${status}`);
-                document.getElementById("server_status").innerText =
-                `Not ${pingSuccessKeyWord}`;
+                document.getElementById("server_status").innerText = `Not ${pingSuccessKeyWord}`;
+                document.getElementById("server_status").className = `unhealthy`;
             }
         })
         .catch((error) => {
             console.log(`not ${pingSuccessKeyWord}: ${error}`);
-            document.getElementById("server_status").innerText =
-            `Error: ${error}`;
+            document.getElementById("server_status").innerText = `Error: ${error}`;
+            document.getElementById("server_status").className = `unhealthy`;
         })
     }
 )();
@@ -88,13 +88,13 @@ is going on. We'll get there soon.
                 document.getElementById("server_status").innerText = pingSuccessKeyWord;
             } else {
                 console.log(`server not ${pingSuccessKeyWord}: ${status}`);
-                document.getElementById("server_status").innerText =
-                `Not ${pingSuccessKeyWord}`;
+                document.getElementById("server_status").innerText = `Not ${pingSuccessKeyWord}`;
+                document.getElementById("server_status").className = `unhealthy`;
             }
         })
         .catch((error) => {
             console.log(`not ${pingSuccessKeyWord}: ${error}`);
-            document.getElementById("server_status").innerText =
-            `Error: ${error}`;
+            document.getElementById("server_status").innerText = `Error: ${error}`;
+            document.getElementById("server_status").className = `unhealthy`;
         })
 )('healthy');
