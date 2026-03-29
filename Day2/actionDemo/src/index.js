@@ -19,7 +19,6 @@ app.use("/success", express.static("./src/success"));
 app.post("/form_submit", (req, res) => {
     console.log('form_submit end point triggered')
     
-    
     console.log("Form data received:")
 
     Object.keys(req.body).forEach( key =>{

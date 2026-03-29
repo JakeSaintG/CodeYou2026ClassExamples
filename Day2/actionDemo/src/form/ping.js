@@ -43,13 +43,16 @@ is going on. We'll get there soon.
             } else {
                 console.log(`server not ${pingSuccessKeyWord}: ${status}`);
                 document.getElementById("server_status").innerText = `Not ${pingSuccessKeyWord}`;
-                document.getElementById("server_status").className = `unhealthy`;
+                document.getElementById("server_banner").className = `unhealthy`;
             }
         })
         .catch((error) => {
             console.log(`not ${pingSuccessKeyWord}: ${error}`);
-            document.getElementById("server_status").innerText = `Error: ${error}`;
-            document.getElementById("server_status").className = `unhealthy`;
+            document.getElementById("server_banner").className = `unhealthy`;
+
+            // Typically, it's better to have a "Security through obscurity" approach and avoid
+            // dumping error messages where users can see them. This is a class exercise, though. 
+            document.getElementById("server_status").innerText = `Error\r\n ${error}`;
         })
     }
 )();
@@ -67,13 +70,16 @@ is going on. We'll get there soon.
             } else {
                 console.log(`server not ${pingSuccessKeyWord}: ${status}`);
                 document.getElementById("server_status").innerText = `Not ${pingSuccessKeyWord}`;
-                document.getElementById("server_status").className = `unhealthy`;
+                document.getElementById("server_banner").className = `unhealthy`;
             }
         })
         .catch((error) => {
             console.log(`not ${pingSuccessKeyWord}: ${error}`);
-            document.getElementById("server_status").innerText = `Error: ${error}`;
-            document.getElementById("server_status").className = `unhealthy`;
+            document.getElementById("server_banner").className = `unhealthy`;
+
+            // Typically, it's better to have a "Security through obscurity" approach and avoid
+            // dumping error messages where users can see them. This is a class exercise, though. 
+            document.getElementById("server_status").innerText = `Error\r\n ${error}`;
         })
     }
 )();
@@ -89,12 +95,15 @@ is going on. We'll get there soon.
             } else {
                 console.log(`server not ${pingSuccessKeyWord}: ${status}`);
                 document.getElementById("server_status").innerText = `Not ${pingSuccessKeyWord}`;
-                document.getElementById("server_status").className = `unhealthy`;
+                document.getElementById("server_banner").className = `unhealthy`;
             }
         })
         .catch((error) => {
             console.log(`not ${pingSuccessKeyWord}: ${error}`);
-            document.getElementById("server_status").innerText = `Error: ${error}`;
-            document.getElementById("server_status").className = `unhealthy`;
+            document.getElementById("server_banner").className = `unhealthy`;
+
+            // Typically, it's better to have a "Security through obscurity" approach and avoid
+            // dumping error messages where users can see them. This is a class exercise, though. 
+            document.getElementById("server_status").innerText = `Error\r\n ${error}`;
         })
 )('healthy');

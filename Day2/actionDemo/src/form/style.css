@@ -3,13 +3,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#server_status.healthy {
-    background-color: rgb(99, 255, 99);
+body {
+    margin: 0;
 }
 
-#server_status.unhealthy {
-    background-color: rgb(246, 115, 115);
+#server_banner {
+    padding: 0 1rem;
+    background-color: rgb(245, 140, 140);
+    border: solid 5px rgb(245, 15, 15);
 
+}
+
+#server_banner.healthy {
+    background-color: rgb(140, 245, 140);
+    border: solid 5px rgb(15, 245, 15);
 }
 
 form,

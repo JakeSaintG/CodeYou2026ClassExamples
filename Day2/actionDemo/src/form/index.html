@@ -7,10 +7,11 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body cz-shortcut-listen="true">
-        <div>
+        <div id="server_banner" class="healthy">
             <p>
                 Server Status:
-                <span id="server_status" class="healthy">Healthy</span>
+                <!-- Default behavior is to display that the server is not healthy until otherwise true -->
+                <span id="server_status">Unhealthy</span>
             </p>
         </div>
 
