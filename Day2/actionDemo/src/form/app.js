@@ -3,12 +3,15 @@ const btnInput = document.getElementById('button_input');
 
 const collapse = (elementId) => {
     const toCollapse = document.getElementById(elementId);
-
-    toCollapse.style.display= 'none';
+    if (toCollapse.style.display !== 'none') {
+        toCollapse.style.display = 'none';
+    } else {
+        toCollapse.style.display = 'block';
+    }
 }
 
 const showHideAdvancedOptions = () => {
-    if (advOptions.style.display != 'none') {
+    if (advOptions.style.display !== 'none') {
         advOptions.style.display = 'none';
         btnInput.value = 'Show Advanced Options';
     } else {
