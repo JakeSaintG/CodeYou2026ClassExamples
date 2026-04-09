@@ -3,5 +3,6 @@
 ## Synopsis
 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
-<span style="color:green; font-weight:bold">Hello!</span>
-
+<!-- comment example -->
+<!-- <span style="color:green; font-weight:bold">Hello!</span> -->
+Hello!
