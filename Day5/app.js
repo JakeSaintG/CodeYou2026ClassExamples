@@ -94,6 +94,7 @@ const printRandomQuoteAtInterval = (intervalSeconds) => {
         "Be exellent to each other.", // Bill (Bill and Ted)
         "Only I Can Call My Dream Stupid!", // Roronoa Zoro
         "It's dangerous to go alone. Take this!", // Random guy in a cave that is just standing there with a sword on the ground in front of him. (The Legend of Zelda)
+        "I see now that the circumstances of one's birth is irrelevent,it is what you do with the gift of life that determines who you are.", //Mewtwo (Pokemon the First Movie)
         "I always though that, if the pen is mightier than the sword, why to actions speak louder than words?", //HummusVacuum
     ];
     
