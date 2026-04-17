@@ -1,0 +1,44 @@
+:root {
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid red;
+    gap: 1rem;
+    display: flex;
+    height: 200px;
+
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap; */
+
+    flex-flow: reverse wrap;
+    align-items: stretch;
+}
+
+.child {
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.align_item_demo {
+    align-self: flex-start;
+}
+
+#container1 {
+    border: 2px solid red;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.child1 {
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.simba {
+    
+}
