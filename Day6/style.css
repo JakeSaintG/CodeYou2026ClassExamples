@@ -1,3 +1,4 @@
+/* Dicussiong on variables */
 :root {
     
 }
@@ -5,6 +6,7 @@
 * {
     box-sizing: border-box;
 }
+
 .container {
     border: 2px solid red;
     gap: 1rem;
@@ -13,7 +15,6 @@
 
     /* flex-direction: row-reverse;
     flex-wrap: wrap; */
-
     flex-flow: reverse wrap;
     align-items: stretch;
 }
@@ -27,18 +28,14 @@
     align-self: flex-start;
 }
 
-#container1 {
+#reverse_example_container {
     border: 2px solid red;
     display: flex;
     padding: 1rem;
     gap: 1rem;
 }
 
-.child1 {
+.reverse_example_child {
     padding: 1rem;
     border: 2px solid black;
-}
-
-.simba {
-    
 }

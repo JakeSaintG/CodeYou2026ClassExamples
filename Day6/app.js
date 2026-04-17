@@ -1,4 +1,4 @@
-const container = document.getElementById("container1");
+const container = document.getElementById("reverse_example_container");
 
 const flip = () => {
     if (container.style.flexDirection !== "column-reverse") {
@@ -8,7 +8,7 @@ const flip = () => {
     }
 };
 
-thisIsAnExampleVariable = 'foo'
+// Discussing keyboard shortcuts and multi line editing
 
 let cat = "column";
 cat = "column";
