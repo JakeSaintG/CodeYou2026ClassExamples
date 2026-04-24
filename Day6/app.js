@@ -1,3 +1,7 @@
+/*
+The usefulness of "column-reverse" was brought into question.
+The below example uses a button to flip the order of elements in a container. 
+*/
 const container = document.getElementById("reverse_example_container");
 
 const flip = () => {

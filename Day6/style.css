@@ -1,6 +1,11 @@
-/* Dicussiong on variables */
+/* 
+    We briefly discussed css root variables as a way to control css properties for
+    reuse. The most common usecases are for color but they can be used for many things!
+*/
 :root {
-    
+    --outer_border: #ed5a88;
+    --inner_border: #000000;
+    --standard_spacing: 1rem;
 }
 
 * {
@@ -8,11 +13,14 @@
 }
 
 .container {
-    border: 2px solid red;
-    gap: 1rem;
+    border: 2px solid var(--outer_border);
+    padding: var(--standard_spacing);
+    gap: var(--standard_spacing);
     display: flex;
     height: 200px;
 
+    /* Below is part of our discussion on flex-flow and it's use to simplify flex-direction & flex-wrap */
+    /* The commentedout rows (24&15) are equivalent to the flex-flow property on line 26.*/
     /* flex-direction: row-reverse;
     flex-wrap: wrap; */
     flex-flow: reverse wrap;
@@ -20,8 +28,8 @@
 }
 
 .child {
-    padding: 1rem;
-    border: 2px solid black;
+    padding: var(--standard_spacing);
+    border: 2px solid var(--inner_border);
 }
 
 .align_item_demo {
@@ -29,13 +37,13 @@
 }
 
 #reverse_example_container {
-    border: 2px solid red;
+    border: 2px solid var(--outer_border);
     display: flex;
-    padding: 1rem;
-    gap: 1rem;
+    padding: var(--standard_spacing);
+    gap: var(--standard_spacing);
 }
 
 .reverse_example_child {
-    padding: 1rem;
-    border: 2px solid black;
+    padding: var(--standard_spacing);
+    border: 2px solid var(--inner_border);
 }
