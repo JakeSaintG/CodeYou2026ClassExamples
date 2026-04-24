@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Below is the HTML for the discussion on align-item. -->
+        <!-- align-item allow for child-level override of align-content styling from a parent element. -->
+        <div class="container">
+            <div class="child">item1</div>
+            <div class="child">item2</div>
+            <div class="child">item3</div>
+            <div class="child">item4</div>
+            <div class="child align_item_demo">item5</div>
+            <div class="child">item6</div>
+        </div>
+
+        <!-- Below is the HTML for the column-reverse demo. See the JS file for more. -->
+        <button onclick="flip()">flip</button>
+        <div id="reverse_example_container" style="flex-direction: column">
+            <div class="reverse_example_child">
+                <strong>item 1</strong>
+            </div>
+            <div class="reverse_example_child">
+                <strong>item 2</strong>
+            </div>
+            <div class="reverse_example_child">
+                <strong>item 3</strong>
+            </div>
+            <div class="reverse_example_child">
+                <strong>item 4</strong>
+            </div>
+            <div class="reverse_example_child">
+                <strong>item 5</strong>
+            </div>
+            <div class="reverse_example_child">
+                <strong>item 6</strong>
+            </div>
+        </div>
+
+        <!-- 
+            We used the below example to discuss searching and the F2 feature.
+
+            If you are interested in this piece, it is HIGHLY recommended that you 
+            check out the recording for this class. We kind of figure it out together
+            and writing it out would be quite difficult to follow.
+        -->
+        <p>Simba's pride</p>
+
+        <script src="app.js"></script>
+    </body>
+</html>
