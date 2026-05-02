@@ -1,0 +1,19 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pkmn {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.container_div {
+    border: solid black 1px;
+}
