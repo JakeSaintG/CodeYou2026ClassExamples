@@ -25,7 +25,11 @@ function modifyArray(inputArray, startingIndex, numToDelete, itmsToAdd) {
 // See the console for the correct array.
 console.log(modifyArray(array, startIndex, deleteCount, itemsToAdd));
 
+// However...let's start discussing unit tests as a way to validate our assumptions.
+// See app.test.js for more!
 
+
+// This is a demo of how to use Array.forEach() to to populate data on to a page.
 const pkmn = document.getElementById("pkmn");
 
 // Pretend that we got this array from an outside API.
