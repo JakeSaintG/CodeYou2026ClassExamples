@@ -58,19 +58,24 @@ const pkmnList = [
 ];
 
 pkmnList.forEach((p) => {
+    // Create a container div element in memory and give it a class
     const container = document.createElement("div");
     container.className = "container_div";
 
+    // Create a p element in memory, give it a class, and put the Pokémon's name in it.
     const name = document.createElement("p");
-    name.innerText = p.name;
     name.className = "name";
-
+    name.innerText = p.name;
+    
+    // Create an img element in memory, give it a class, and set the Pokémon's image link as the source.
     const img = document.createElement("img");
-    img.src = p.img;
     img.className = "img";
+    img.src = p.img;
 
+    // Add our p element and img elemenet to our container div
     container.append(name);
     container.append(img);
 
+    // Add our filled container div to the pkmn element on the DOM.
     pkmn.append(container);
 });
