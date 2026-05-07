@@ -78,4 +78,9 @@ pkmnList.forEach((p) => {
 
     // Add our filled container div to the pkmn element on the DOM.
     pkmn.append(container);
+
+    /* ================================================================
+    CHALLENGE! Add some more Javascript and CSS to populate the Pokémon 
+    items with the remaining information in the pkmnList array. 
+    ================================================================ */
 });
