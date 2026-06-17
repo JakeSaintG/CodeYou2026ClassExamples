@@ -3,8 +3,8 @@
 /*
 Besides syntax, there is little difference between arrow functions and traditional functions.
 https://www.geeksforgeeks.org/javascript/difference-between-regular-functions-and-arrow-functions/
-- Traditional functions do have access to an "arguements" object and can be hoisted.
-  - Both of which can be considered "fragile" and their use is illadvised.
+- Traditional functions do have access to an "arguments" object and can be hoisted.
+  - Both of which can be considered "fragile" and their use is ill-advised.
 - Arrow functions 
   - Their main benefit is being more concise when used as a callback
 */

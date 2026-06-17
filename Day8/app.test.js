@@ -9,7 +9,7 @@
 // "vanilla" Javascript so let's make one ourselves for the below tests.
 const assertEqual = (expected, actual) => {
     // Array equality is odd in JS so let's convert to a string before we compare.
-    // JSON.stringify() is used to allow any arguement to be passed in. Not just arrays.
+    // JSON.stringify() is used to allow any argument to be passed in. Not just arrays.
     if (JSON.stringify(expected) === JSON.stringify(actual)) {
         console.log('✅ Test passed!');
     } else {

@@ -8,9 +8,9 @@ const startIndex = 4; /* Starting at index 4 (the 5th item in the array)...*/
 const deleteCount = 1; /*...delete the item...*/
 const itemsToAdd = [ "may", "june", "july" ]; /*...replace it with a corrected section of the array*/
 
-// Create a function that uses the above arguements to complete the task.
+// Create a function that uses the above arguments to complete the task.
 function modifyArray(inputArray, startingIndex, numToDelete, itmsToAdd) {
-    // Note: The arguement names are intentionally different to avoid confusion and issues with scope.
+    // Note: The argument names are intentionally different to avoid confusion and issues with scope.
 
     /* Splice edits the array directly and returns the items what were removed...
     which we don't actually need. Comment in the below rows and it should print ["june"]. */
