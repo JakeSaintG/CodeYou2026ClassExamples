@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 // Pull in the contents of the .env file
 dotenv.config();
 
+// Get the API_KEY off of the env file
 const API_KEY = process.env.API_KEY;
 
 if (API_KEY === undefined) {
@@ -22,9 +23,10 @@ app.use(cors());
 // Though the magic of node, we can create a .env file for the user! Give it a shot here.
 // Hint: You'll need to import 'fs'.
 
-// Send all files in the form folder via localhost:3000/
+// Send all files in the form folder via localhost:3000/ (root)
 app.use("/", express.static("./src/page"));
 
+// Create a get route for the page to "ask" the api for the key
 app.get("/key", (req, res) => {
     res.status(200).json({key: API_KEY});
 })
