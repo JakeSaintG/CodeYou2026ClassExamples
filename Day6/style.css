@@ -19,8 +19,8 @@
     display: flex;
     height: 200px;
 
-    /* Below is part of our discussion on flex-flow and it's use to simplify flex-direction & flex-wrap */
-    /* The commentedout rows (24&15) are equivalent to the flex-flow property on line 26.*/
+    /* Below is part of our discussion on flex-flow and its use to simplify flex-direction & flex-wrap */
+    /* The commented out rows (24&15) are equivalent to the flex-flow property on line 26.*/
     /* flex-direction: row-reverse;
     flex-wrap: wrap; */
     flex-flow: reverse wrap;

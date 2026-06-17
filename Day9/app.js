@@ -2,7 +2,7 @@
 
 /* 
 The Rest operator can be used when declaring a function. It allows for arguments to be
-passed into a function without explictly naming them or defining a specific amount of them.
+passed into a function without explicitly naming them or defining a specific amount of them.
 It does so by packing them into an array that can be accessed in the function.
 */
 const restExample = (notRest, ...restArgs) => {

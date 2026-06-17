@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>API Key Example!</h1>
+        <h2>You API Key is...</h2>
+        <div id="print_api_key"></div>
+        <p>Typically, one wouldn't want to display their API Key to the page. We're being rebels for educational purposes, though. 😎</p>
+    </main>
+
+    <!-- Why are these both modules now? -->
+    <!-- They were changed to modules to demonstrate a more declarative, explict way of sharing variable across files.-->
+    <!-- See the JS files for more info! -->
+    <script type="module" src="env.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
