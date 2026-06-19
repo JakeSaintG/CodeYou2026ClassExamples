@@ -1,0 +1,1 @@
+added the type of module to package to allow use of ES6 modules in server.js
