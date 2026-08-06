@@ -20,7 +20,7 @@ app.post("/form_submit", (req, res) => {
     
     console.log("Form data received:")
 
-    Object.keys(req.body).forEach( key =>{
+    Object.keys(req.body).forEach( key => {
         console.log(key, req.body[key]);
     })
 
